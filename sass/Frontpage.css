@@ -1,0 +1,150 @@
+body,
+html {
+  margin: 0;
+}
+
+/*Background particles*/
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+/**Scroll bar **/
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
+/*container for landing page*/
+.Landingpage {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-areas: "subtitle blank photo";
+}
+
+/*words on landing page*/
+#subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  grid-area: subtitle;
+  margin: 1vh 1vw 1vh 10vw;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+#subtitle #greetings {
+  font-weight: bold;
+  color: #4cd137;
+  font-size: 9vw;
+}
+#subtitle #name {
+  color: black;
+  font-weight: 1000;
+  font-size: 1.1em;
+}
+
+.container--center-self {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+#portrait {
+  grid-area: photo;
+  border-radius: 50%;
+  box-shadow: 10px 21px 300px -85px rgba(231, 231, 231, 0.75);
+}
+#portrait img {
+  overflow: hidden;
+  background: white;
+  border-radius: 50%;
+  height: 15vw;
+  width: auto;
+}
+
+.contactInfo_element {
+  padding-top: 15px;
+}
+.contactInfo_element svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contactInfo_element a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.contactInfo_element a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+.contactInfo_element span {
+  margin-left: 20px;
+}
+.contactInfo_element .re-center {
+  padding-left: 7px;
+}
+
+#projects {
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "subtitle demo";
+}
+#projects .project_title {
+  margin-left: 2vw;
+  color: #48dbfb;
+  grid-area: subtitle;
+  font-size: 7vw;
+  font-weight: bold;
+  z-index: 10;
+}
+#projects .project_demos {
+  grid-area: demo;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 20px;
+  grid-template-rows: 300px;
+  margin: auto 50px auto 50px;
+}
+
+.notdone_red {
+  color: red;
+}
+
+.card-title svg {
+  pointer-events: none;
+}
+
+footer {
+  color: rgba(128, 128, 128, 0.8);
+  text-align: center;
+  line-height: 9px;
+}
+footer .sm-font {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .Landingpage {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Frontpage.css.map */

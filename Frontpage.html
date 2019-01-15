@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Albert Fung</title>
+    <link rel="stylesheet" href="sass/Frontpage.css">
+    <link rel="icon" type="image/ico" href="./assets/images/icon.png" />
+    <!-- materialize css/js (for cards) -->
+    <link rel="stylesheet" href="./assets/materialize.css">  
+    <script src="./assets/materialize.js"> </script>
+    <!--Font Awesome Icons-->
+    <script defer src="./assets/fontawesome.js"></script>
+   
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!--AOS animations-->
+    <link rel="stylesheet" href="./assets/AOS/aos.css">
+    <script src="./assets/AOS/aos.js"></script>
+    
+    <!--Particles js -->
+    <script src="assets/particles.js"></script>
+    <script src="background-particles.js"></script>
+  </head>
+  
+<body>
+<!--Hero page -->
+  <section class="Landingpage">
+    <div class="container--center-self " id="portrait">
+      <img data-aos="fade-down" src="assets/images/portrait.png" alt="Self-Portrait">
+    </div>
+    <div id="subtitle" class="container--center-self">
+      <div>
+        <p><span id=greetings>Hello!</span><br>
+          My name is <span id="name">Albert Fung</span>, I am Computer Engineering 
+          student from the University of Ottawa.
+          When im not coding you can usually find me 
+          trying new things whether its food or activities!
+      
+          <p>Feel free to email me if you wanna talk or grab coffee!</p>
+        </p>
+        <!--Section about contact information , resume and github-->
+        <div id="contactInfo">
+          <div class="contactInfo_element">
+            <a target="_blank" href="https://github.com/albert-fung">
+              <i class="fab fa-github-alt fa-2x"></i>
+              <span>github.com/albert-fung</span>
+            </a>
+          </div>
+          <div class="contactInfo_element">
+            <a href="mailto:albert.fung@live.com">
+              <i class="fas fa-at fa-2x"></i>
+              <span>albert.fung@live.com</span>
+            </a>
+          </div>
+          <div class="contactInfo_element">
+            <a href=""> <!--TODO ADD FIXED RESUME-->
+              <i class="far fa-file fa-2x "></i>
+             <span class="re-center">Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="particles-js">
+      </div>
+    </section>    
+    <section id="projects">
+      <div data-aos="fade-down" class="container--center-self project_title">Some Projects!</div>    
+      <div class="project_demos" >
+        <!--Project 1 -->
+        <div data-aos="fade-down"  class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/projects_1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Project Bee<i class="fas fa-caret-up right"></i></span>
+            <p><a target="_blank" href="https://github.com/albert-fung/Project-Bee">Github</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Project Bee<i class="fas fa-times right"></i></span>
+            <p class="notdone_red">Currently in development</p>
+            <p>Working in a team to create 
+              a real time system to collect
+              data on beehives and to display 
+              on a website using Firebase cloud</p>
+            <p>
+              <b>Role:</b> Front end developer
+            </p>
+            <p>
+              <b>Tools:</b> Firebase SDK and ReactJS  
+            </p>
+          </div>
+        </div>
+        <!--Project 2 -->
+        <div data-aos="fade-down" class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/projects_2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Food<i class="fas fa-caret-up right"></i></span>
+            <p><a href="https://github.com/albert-fung/Food">Github</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Food<i class="fas fa-times right"></i></span>
+            <p>
+            A Yelp inspired website that searches
+            for food at your current location or 
+            anywhere around the world using yelp fusion api 
+            and google maps api 
+            </p>
+            <p>
+            <b>Tools:</b> ReactJS 
+            </p>
+          </div>
+        </div>
+        <!--Project 3-->
+        <div data-aos="fade-down" class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/projects_3.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Weather App<i class="fas fa-caret-up right"></i></span>
+              <p><a href="https://github.com/albert-fung/Weather-app-">Github</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Weather app<i class="fas fa-times right"></i></span>
+              <p>
+               A responsive website that provides the  
+               weekly weather forecast using Dark skies API and google maps api 
+              </p>
+              <p>
+                <b>Tools:</b> JQuery and Bootstrap
+              </p>
+            </div>
+          </div>
+          <a target="_blank" href="https://github.com/albert-fung?tab=repositories">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/see_more.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">See More!</span>
+              </div>
+          </div>
+          </a>
+      </div>
+    </section>
+    <footer>
+      Built by Albert &#169;
+      <br>
+      <span class="sm-font">
+      with some coffee too ...
+    </span>  
+    </footer>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        AOS.init({once: true});
+      }); 
+    </script>
+</body>
+</html>
