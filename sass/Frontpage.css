@@ -72,8 +72,8 @@ html {
   overflow: hidden;
   background: white;
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 325px;
+  height: 325px;
 }
 
 .contactInfo_element {
@@ -144,6 +144,30 @@ footer .sm-font {
 @media screen and (max-width: 800px) {
   .Landingpage {
     display: block;
+    height: 100vh;
+  }
+
+  #portrait {
+    display: flex;
+    justify-content: center;
+    margin: 75px auto 0 auto;
+  }
+
+  .contactInfo_element {
+    display: inline-block;
+  }
+  .contactInfo_element span {
+    margin: 0;
+  }
+  .contactInfo_element a svg {
+    margin-left: 10px;
+  }
+  .contactInfo_element .re-center {
+    margin: 0;
+  }
+
+  #projects .project_demos {
+    grid-template-columns: 48% 48%;
   }
 }
 
