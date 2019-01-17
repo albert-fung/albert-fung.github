@@ -68,13 +68,14 @@ background-color: rgba($color: white, $alpha: 1);
 #portrait {
   grid-area: photo;
   border-radius: 50%;
+
   box-shadow: 10px 21px 300px -85px rgba(231, 231, 231, 0.75);
   img {
     overflow:hidden;
     background:white;
     border-radius:50%;
-    height:15vw;
-    width:auto;
+    width:350px ;
+    height:350px;
   }
 }
 .contactInfo_element {
