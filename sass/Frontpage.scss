@@ -152,19 +152,24 @@ footer {
   }
 
   .contactInfo_element {
-    display: inline-block;
-    span{
+    span
+    .re-center{
       margin:0;
     }
     a svg {
       margin-left: 10px;
     }
-    .re-center{
-      margin:0;
-    }
+
   }
-  #projects{
-  .project_demos{
-    grid-template-columns:48% 48%
-  }}
+  #projects {
+    display: block;
+  .project_demos {
+    display:block;
+  }
+  .project_title { 
+    font-size:75px;
+  }
+  }
 }
+
+@media screen and (max-width: 800px) {}

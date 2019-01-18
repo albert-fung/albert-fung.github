@@ -153,21 +153,21 @@ footer .sm-font {
     margin: 75px auto 0 auto;
   }
 
-  .contactInfo_element {
-    display: inline-block;
-  }
-  .contactInfo_element span {
+  .contactInfo_element span .re-center {
     margin: 0;
   }
   .contactInfo_element a svg {
     margin-left: 10px;
   }
-  .contactInfo_element .re-center {
-    margin: 0;
-  }
 
+  #projects {
+    display: block;
+  }
   #projects .project_demos {
-    grid-template-columns: 48% 48%;
+    display: block;
+  }
+  #projects .project_title {
+    font-size: 75px;
   }
 }
 
